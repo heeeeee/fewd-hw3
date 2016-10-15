@@ -1,0 +1,228 @@
+/***************************************
+   Default Styles
+   ************************************** */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 75%;
+  color: #A9A9A9;
+  background: #fff;
+}
+
+/** 
+* Defining Header Formats
+**/
+
+h1 {
+  font-size: 300%;
+  font-weight: normal;
+  color: #b32400;
+  margin-bottom: 20px;
+}
+
+h1 > small {
+  font-size: 50%;
+  margin-bottom: 0;
+  color: #E0E0E0;
+}
+
+h2 {
+  font-size: 180%;
+  font-weight: normal;
+  color: #E0E0E0;
+  padding-bottom: none;
+}
+
+h3 {
+  font-size: 180%;
+  color: #000;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/** 
+* Defining the container
+**/
+#container {
+  font-size: 1.2em;
+  margin: 10px 2em;
+}
+
+.container{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /*border:#000 3px solid;*/
+  /*Add overflow:hidden property to tell the container to recognize floated children*/
+  overflow: hidden;a
+}
+
+.col-8, .col-4,.col-2{
+  float: left;
+  /*includes the calculation of pixel of the border in the box calculation*/
+  box-sizing: border-box;
+}
+
+.col-8{
+  /*this is a child property because it is hidden inside the container*/
+  width: 66.66666666%;
+  background-color: #FFF;
+  color: #000;
+  padding-right: 10px;
+}
+
+.col-4{
+  /*this is a child property because it is hidden inside the container*/
+  width: 33.33333333%;
+  background-color: #FFF;
+  color: #000;
+  border: none;
+}
+
+.col-2{
+  /*this is a child property because it is hidden inside the container*/
+  width: 16.6666666%;
+  height: 40px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  border: #FFF 1px solid;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.col-blog{
+  width: 100%;
+  background-color: #FFF;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.col-right{
+  width: 100%;
+  background-color: #FFF;
+  color: #000;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.ad-block{
+  width: 120px;
+  height: 100px;
+  background-color: #C0C0C0;
+  color: #696969;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  padding: 50px;
+  text-align: center;
+}
+
+.ad-block-text{ 
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center 
+}
+
+/** 
+* Supplementary components to the container
+**/
+.continue{
+  color: #b32400;
+  text-align: right;
+  border-bottom: 1px gray solid;
+  padding-bottom: 30px;
+  font-style: bold;
+}
+
+.more{
+  color: #b32400;
+  text-align: right;
+  border-bottom: 1px gray solid;
+  padding-bottom: 30px;
+  font-style: bold;
+  margin-left: 10px;
+}
+
+/** 
+* Menu Bar at the bottom
+**/
+.bottom{
+  margin: 20px 0 20px 0;
+}
+
+.bottom-menu{
+  color: #ff4500;
+  display: inline;
+  list-style: none;
+}
+
+.bottom-menu-li{
+  border-right: 1px solid #A9A9A9;
+  display: inline;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.bottom-menu-li-first{
+  border-right: 1px solid #A9A9A9;
+  display: inline;
+  padding-right: 2px;
+}
+
+.bottom-menu-li-last{
+  border: none;
+  display: inline;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.bottom-menu-li > a {
+  color: #b32400;
+  text-decoration: none
+}
+
+.bottom-menu-li-first > a {
+  color: #b32400;
+  text-decoration: none
+}
+
+.bottom-menu-li-last > a {
+  color: #b32400;
+  text-decoration: none
+}
+
+/** 
+* Some other cosmetic settings
+**/
+
+img {
+  width: 100%;
+  margin-bottom: 20px;
+} 
+
+.col-2 > a {
+  color: #FFF;
+  text-decoration: none
+}
+
+.col-right ul > li > a{
+  color: #b32400;
+  text-decoration: none;
+}
+
+.col-blog > p::first-letter{
+  font-size: 400%;
+  float: left;
+}
